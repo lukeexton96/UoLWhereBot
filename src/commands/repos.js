@@ -5,6 +5,11 @@ const _ = require('lodash')
 const config = require('../config')
 const trending = require('github-trending')
 
+var groundFloorImage = 'https://api.imgur.com/3/image/Fyl0Q';
+var firstFloorImage = 'https://api.imgur.com/3/image/AunlR';
+var secondFloorImage = 'https://api.imgur.com/3/image/LuGpR';
+var thirdFloorImage = 'https://api.imgur.com/3/image/2Rbtg';
+
 const msgDefaults = {
   response_type: 'in_channel',
   username: 'Wherebot',
@@ -20,16 +25,14 @@ const handler = (payload, res) => {
         title: `${repo.owner}/${repo.title} `,
         title_link: repo.url,
         text: `_${repo.description}_\n${repo.language} • ${repo.star}>`,
+        image: secondFloorImage,
         mrkdwn_in: ['text', 'pretext']
       }
     })
 
-    var groundFloorImage = 'https://api.imgur.com/3/image/Fyl0Q';
-
     let msg = _.defaults({
       channel: payload.channel_name,
-      attachments: attachments,
-      groundFloorImage: groundFloorImage
+      attachments: attachments
     }, msgDefaults)
 
     res.set('content-type', 'application/json')

@@ -14,13 +14,13 @@ let attachments = [
   {
     title: 'Wherebot will help you find the location of any room in the MHT Building.',
     color: '#2FA44F',
-    text: '`/wherebot [room name]` returns the location of any room in the MHT',
+    text: '`/where [room name]` returns the location of any room in the MHT',
     mrkdwn_in: ['text']
   },
   {
     title: 'Configuring Wherebot',
     color: '#E3E4E6',
-    text: '`/wherebot help` ... you\'re lookin at it! \n',
+    text: '`/where help` ... you\'re lookin at it! \n',
     mrkdwn_in: ['text']
   }
 ]
