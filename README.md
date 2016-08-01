@@ -1,6 +1,10 @@
-# 🌟 Starbot
+# University of Lincoln - Where Bot
+
+!Using 'Starbot' as a basis.
 
 ![Starbot](https://heroku-www-files.s3.amazonaws.com/starbot/starbot-banner.png)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
@@ -9,10 +13,10 @@ Starbot is [GitHub's trending open-source](https://github.com/trending/) page, r
 
 ### Supported `/slash` commands
 
-Create a `/starbot` [custom slash command](https://api.slack.com/slash-commands), using the URL: `{app-name}.herokuapp.com/commands/starbot`. *Take note of the provided `token`, this is used to verify requests come from Slack.*
+Create a `/where` [room number](https://api.slack.com/slash-commands), using the URL: `{app-name}.herokuapp.com/commands/starbot`. *Take note of the provided `token`, this is used to verify requests come from Slack.*
 
-- `/starbot` or `/starbot help` - List available commands
-- `/starbot repos` - Display trending GitHub projects
+- `/where` or `/where help` - List available commands
+- `/where repos` - Display trending GitHub projects
 
 ### Install
 
