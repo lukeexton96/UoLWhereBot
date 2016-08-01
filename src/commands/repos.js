@@ -24,11 +24,12 @@ const handler = (payload, res) => {
       }
     })
 
-    
+    var groundFloorImage = 'https://api.imgur.com/3/image/Fyl0Q';
 
     let msg = _.defaults({
       channel: payload.channel_name,
-      attachments: attachments
+      attachments: attachments,
+      groundFloorImage: groundFloorImage
     }, msgDefaults)
 
     res.set('content-type', 'application/json')
