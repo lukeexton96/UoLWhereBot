@@ -1,8 +1,6 @@
 # University of Lincoln - Where Bot
 
-!Using 'Starbot' as a basis.
-
-![Starbot](https://heroku-www-files.s3.amazonaws.com/starbot/starbot-banner.png)
+Using 'Starbot' as a basis.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
