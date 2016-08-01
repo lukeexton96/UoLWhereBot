@@ -18,7 +18,7 @@ let attachments = [
     mrkdwn_in: ['text']
   },
   {
-    title: 'Configuring Starbot',
+    title: 'Configuring Wherebot',
     color: '#E3E4E6',
     text: '`/wherebot help` ... you\'re lookin at it! \n',
     mrkdwn_in: ['text']

@@ -24,6 +24,8 @@ const handler = (payload, res) => {
       }
     })
 
+    
+
     let msg = _.defaults({
       channel: payload.channel_name,
       attachments: attachments
