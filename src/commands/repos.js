@@ -5,11 +5,6 @@ const _ = require('lodash')
 const config = require('../config')
 const trending = require('github-trending')
 
-var groundFloorImage = 'https://api.imgur.com/3/image/Fyl0Q';
-var firstFloorImage = 'https://api.imgur.com/3/image/AunlR';
-var secondFloorImage = 'https://api.imgur.com/3/image/LuGpR';
-var thirdFloorImage = 'https://api.imgur.com/3/image/2Rbtg';
-
 const msgDefaults = {
   response_type: 'in_channel',
   username: 'Wherebot',
