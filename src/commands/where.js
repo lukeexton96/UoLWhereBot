@@ -13,20 +13,20 @@ const theLove = [{
 // Display images as an attachment reponse 
 const groundFloorImage = [{
       title: "Ground floor map",
-      image_url: "http://imgur.com/a/Fyl0Q.png"
+      image_url: "http://i.imgur.com/PLPLsuO.png"
     }]
 const firstFloorImage = [{
       title: "First floor map",
-      image_url: "http://i.imgur.com/AunlR.png"
+      image_url: "http://i.imgur.com/NBgLWpi.png"
     }]
 const secondFloorImage = [{
       title: "Second floor map",
-      image_url: "http://i.imgur.com/LuGpR.png"
+      image_url: "http://i.imgur.com/6MCF8Vw.png"
     }]
 
  const thirdFloorImage = [{
       title: "Third floor map",
-      image_url: "http://i.imgur.com/2Rbtg.png"
+      image_url: "http://i.imgur.com/rOkcR1j.png"
     }]
  
 
