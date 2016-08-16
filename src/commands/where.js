@@ -5,9 +5,9 @@ const _ = require('lodash')
 const config = require('../config')
 
 // Adding in youtube video reponses
-const theRoom = [{
-      title: "[YouTube] The Room - Chris R fight scene",
-      title_link: "https://www.youtube.com/watch?v=Zoqky3GoFCQ"
+const theLove = [{
+      title: "The Black Eyed Peas - Where Is The Love?",
+      title_link: "https://www.youtube.com/watch?v=WpYeekQkAdc"
     }]
 
 // Display images as an attachment reponse 
@@ -64,6 +64,11 @@ const handler = (payload, res) => {
       case 'cmp3':
         responseText = "This is the third floor map"
         attachment = thirdFloorImage
+        break;
+    // Funny easter eggs 
+      case 'the love':
+        responseText = "It's here, I think."
+        attachment = theLove
         break;
 
       default:
