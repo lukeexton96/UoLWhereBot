@@ -15,7 +15,7 @@ Create a `/where` [room number](https://api.slack.com/slash-commands), using the
 
 ### Tools 
 
-- [Paper Trial ]https://papertrailapp.com/ for Heroku Debug Info.
+- [Paper Trial] (https://papertrailapp.com/) for Heroku Debug Info.
 
 ### Install
 
