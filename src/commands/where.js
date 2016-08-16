@@ -20,7 +20,7 @@ const handler = (payload, res) => {
 
     let msg = _.defaults({
       channel: payload.channel_name,
-      text: reponseText,
+      text: requestText,
       attachments: attachments
     }, msgDefaults)
 
