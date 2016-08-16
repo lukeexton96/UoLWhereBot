@@ -4,15 +4,31 @@
 const _ = require('lodash')
 const config = require('../config')
 
+// Adding in youtube video reponses
 const theRoom = [{
       title: "[YouTube] The Room - Chris R fight scene",
       title_link: "https://www.youtube.com/watch?v=Zoqky3GoFCQ"
     }]
 
+// Display images as an attachment reponse 
 const groundFloorImage = [{
-     title: "Second floor map",
-     image_url: "https://api.imgur.com/3/image/Fyl0Q.png"
-   }]
+      title: "Ground floor map",
+      image_url: "http://i.imgur.com/Fyl0Q.png"
+    }]
+const firstFloorImage = [{
+      title: "First floor map",
+      image_url: "http://i.imgur.com/AunlR.png"
+    }]
+const secondFloorImage = [{
+      title: "Second floor map",
+      image_url: "http://i.imgur.com/LuGpR.png"
+    }]
+
+ const thirdFloorImage = [{
+      title: "Third floor map",
+      image_url: "http://i.imgur.com/2Rbtg.png"
+    }]
+ 
 
 const msgDefaults = {
   response_type: 'in_channel',
@@ -26,14 +42,28 @@ const handler = (payload, res) => {
     var attachment = null;
     var responseText
 
+    // Remove 'is' if someone types '/where is CMP2019', this prevents Internal Server Errors
     if(requestText.slice(0,3)=="is ") requestText = requestText.substring(3)
+    // Remove quesiton marks at the end the slash command, this prevents Internal Server Errors
     if(requestText.slice(-1)=="?") requestText = requestText.substring(0, requestText.length - 1)
 
-
+    // Switch statement that determines the output based on input
     switch(requestText){
-      case 'cmp':
-        responseText = "This is a response to CMP"
+      case 'cmp0':
+        responseText = "This is the ground floor map"
         attachment = groundFloorImage
+        break;
+      case 'cmp1':
+        responseText = "This is the first floor map"
+        attachment = firstFloorImage
+        break;
+      case 'cmp2':
+        responseText = "This is the second floor map"
+        attachment = secondFloorImage
+        break;
+      case 'cmp3':
+        responseText = "This is the third floor map"
+        attachment = thirdFloorImage
         break;
 
       default:
