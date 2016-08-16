@@ -54,4 +54,4 @@ const handler = (payload, res) => {
     return
 }
 
-module.exports = { pattern: /^is /ig, handler: handler }
+module.exports = { pattern: /^((?!help).)/ig, handler: handler }

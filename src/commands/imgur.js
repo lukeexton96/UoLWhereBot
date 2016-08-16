@@ -3,10 +3,10 @@
 var request = require('request');
 
 // Imgur API Source: https://api.imgur.com/endpoints/image/
-var groundFloorImage = 'https://api.imgur.com/3/image/Fyl0Q';
-var firstFloorImage = 'https://api.imgur.com/3/image/AunlR';
-var secondFloorImage = 'https://api.imgur.com/3/image/LuGpR';
-var thirdFloorImage = 'https://api.imgur.com/3/image/2Rbtg';
+var groundFloorImage = 'https://api.imgur.com/3/image/Fyl0Q.png';
+var firstFloorImage = 'https://api.imgur.com/3/image/AunlR.png';
+var secondFloorImage = 'https://api.imgur.com/3/image/LuGpR.png';
+var thirdFloorImage = 'https://api.imgur.com/3/image/2Rbtg.png';
 
 
 request('https://api.imgur.com/3/image/Fyl0Q', function (error, response, body) {
