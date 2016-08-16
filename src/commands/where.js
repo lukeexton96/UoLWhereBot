@@ -9,6 +9,11 @@ const theRoom = [{
       title_link: "https://www.youtube.com/watch?v=Zoqky3GoFCQ"
     }]
 
+const groundFloorImage = [{
+     title: "Second floor map",
+     image_url: "https://api.imgur.com/3/image/Fyl0Q.png"
+   }]
+
 const msgDefaults = {
   response_type: 'in_channel',
   username: 'Wherebot',
@@ -28,6 +33,7 @@ const handler = (payload, res) => {
     switch(requestText){
       case 'cmp':
         responseText = "This is a response to CMP"
+        attachment = groundFloorImage
         break;
 
       default:
