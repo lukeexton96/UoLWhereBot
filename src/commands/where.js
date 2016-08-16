@@ -4,6 +4,11 @@
 const _ = require('lodash')
 const config = require('../config')
 
+const theRoom = [{
+      title: "[YouTube] The Room - Chris R fight scene",
+      title_link: "https://www.youtube.com/watch?v=Zoqky3GoFCQ"
+    }]
+
 const msgDefaults = {
   response_type: 'in_channel',
   username: 'Wherebot',
@@ -13,7 +18,7 @@ const msgDefaults = {
 const handler = (payload, res) => {
 
     var requestText = payload.text.toLowerCase()
-    var attachments = null;
+    var attachment = null;
     var responseText
 
     if(requestText.slice(0,3)=="is ") requestText = requestText.substring(3)
@@ -27,6 +32,7 @@ const handler = (payload, res) => {
 
       default:
         responseText = "I don't recognise that command."
+        attachment = theRoom
     }
 
     console.log("REQUEST: " + payload.user_name + " (" + payload.channel_name + "): `/where is " + payload.text + "`")
@@ -34,7 +40,7 @@ const handler = (payload, res) => {
     let msg = _.defaults({
       channel: payload.channel_name,
       text: responseText,
-      attachments: attachments
+      attachments: attachment
     }, msgDefaults)
 
     res.set('content-type', 'application/json')
