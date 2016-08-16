@@ -12,7 +12,10 @@ Starbot is [GitHub's trending open-source](https://github.com/trending/) page, r
 Create a `/where` [room number](https://api.slack.com/slash-commands), using the URL: `{app-name}.herokuapp.com/commands/starbot`. *Take note of the provided `token`, this is used to verify requests come from Slack.*
 
 - `/where` or `/where help` - List available commands
-- `/where repos` - Display trending GitHub projects
+
+### Tools 
+
+- [Paper Trial ]https://papertrailapp.com/ for Heroku Debug Info.
 
 ### Install
 
