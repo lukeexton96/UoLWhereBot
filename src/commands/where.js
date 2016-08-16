@@ -13,7 +13,7 @@ const theRoom = [{
 // Display images as an attachment reponse 
 const groundFloorImage = [{
       title: "Ground floor map",
-      image_url: "http://i.imgur.com/Fyl0Q.png"
+      image_url: "http://imgur.com/a/Fyl0Q"
     }]
 const firstFloorImage = [{
       title: "First floor map",
