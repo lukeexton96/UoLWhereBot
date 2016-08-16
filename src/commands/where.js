@@ -49,6 +49,7 @@ const handler = (payload, res) => {
 
     // Switch statement that determines the output based on input
     switch(requestText){
+    // Check Request Text and send response accordingly
       case 'cmp0':
         responseText = "This is the ground floor map"
         attachment = groundFloorImage
