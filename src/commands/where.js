@@ -19,8 +19,9 @@ const handler = (payload, res) => {
     if(requestText.slice(0,3)=="is ") requestText = requestText.substring(3)
     if(requestText.slice(-1)=="?") requestText = reponseText.substring(0, requestText.length - 1)
 
+
     switch(requestText){
-      case 'CMP':
+      case 'cmp':
         responseText = "This is a response to CMP"
         break;
 
@@ -28,9 +29,11 @@ const handler = (payload, res) => {
         responseText = "I don't recognise that command."
     }
 
+    console.log("REQUEST: " + payload.user_name + " (" + payload.channel_name = "): `/where is " + payload.text + "`")
+
     let msg = _.defaults({
       channel: payload.channel_name,
-      text: reponseText,
+      text: responseText,
       attachments: attachments
     }, msgDefaults)
 
