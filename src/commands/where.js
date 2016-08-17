@@ -31,7 +31,7 @@ const secondFloorImage = [{
  
 
 const msgDefaults = {
-  response_type: 'in_channel',
+  response_type: 'ephemeral',
   username: 'Wherebot',
   icon_emoji: config('ICON_EMOJI')
 }

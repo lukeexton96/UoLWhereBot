@@ -27,6 +27,7 @@ let attachments = [
 
 const handler = (payload, res) => {
   let msg = _.defaults({
+    response_type: 'ephemeral',
     channel: payload.channel_name,
     attachments: attachments
   }, msgDefaults)
